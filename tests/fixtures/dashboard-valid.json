@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-30T09:00:00+08:00",
+  "quota": {
+    "fiveHour": {
+      "remainingPercent": 68.0,
+      "resetsAt": "2026-08-30T12:14:00+08:00"
+    },
+    "weekly": {
+      "remainingPercent": 42.0,
+      "resetsAt": "2026-09-03T08:00:00+08:00"
+    }
+  },
+  "repositories": [
+    {
+      "fullName": "example-org/example-project",
+      "private": true,
+      "defaultBranch": "main",
+      "openIssues": 3,
+      "openPullRequests": 1,
+      "latestCommitAt": "2026-08-30T08:40:00+08:00",
+      "workflow": {
+        "status": "completed",
+        "conclusion": "success",
+        "updatedAt": "2026-08-30T08:45:00+08:00"
+      }
+    }
+  ]
+}

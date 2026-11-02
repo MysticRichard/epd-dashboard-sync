@@ -1,0 +1,33 @@
+# Copy to a local config.toml and point feed_path at a sanitized dashboard.json.
+# For a first run without a producer, use the bundled example:
+# feed_path = "./examples/dashboard.example.json"
+feed_path = "/path/to/dashboard.json"
+scan_timeout_seconds = 8
+sync_interval_seconds = 600
+stale_after_seconds = 86400
+# Local Codex rollout logs are read-only; this avoids repeated provider auth.
+codex_home = "~/.codex"
+local_snapshot_output = "state/codex-snapshot.json"
+local_stale_after_seconds = 900
+# 写入成功后自动激活 Codex 槽位并刷新屏幕；设为 false 则保留设备当前轮播选择。
+activate_after_sync = true
+
+[device]
+service_uuid = "62750001-d828-918d-fb46-b6c11c675aec"
+# Fill this after discovery if multiple EPD devices are nearby.
+identifier = ""
+
+[clock]
+# Optional DA14585 2.13-inch clock panel, synced even when dashboard content is unchanged.
+enabled = false
+identifier = ""
+
+[slots]
+# Keep false until `epd-dashboard discover` confirms the actual panel/slots.
+codex = 0
+github = 1
+protected = []
+configured = false
+
+# Optional future external access: set feed_path to an HTTPS snapshot only after
+# the producer's reverse proxy is configured with TLS and short-lived authentication.
