@@ -57,7 +57,8 @@ flowchart LR
 
 本仓库包含客户端、渲染器和本机 Codex 采集器。GitHub 仓库数据与可选的远程
 quota 生产端不在本仓库中；你可以自己写一个 producer，只要输出下面约定的
-脱敏 JSON 即可。
+脱敏 JSON 即可。NAS/可信工作机的推荐拓扑和安全边界见
+[NAS 采集端方案](docs/nas-producer.md)。
 
 ## 支持的设备
 
