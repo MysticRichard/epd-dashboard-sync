@@ -7,8 +7,9 @@ EPD-nRF5 e-paper displays. It is not a firmware package or a hosted service.
 
 ![EPD Dashboard Sync 设备实拍](docs/assets/device-dashboard.jpg)
 
-> 实拍设备：4.2 英寸 400×300 三色 EPD，驱动 `03`，运行 v2 槽位协议。
-> 设备外壳为真实实拍；屏幕区域已替换为虚构示例数据，以移除历史个人信息。
+> 实际设备实拍：4.2 英寸 400×300 三色 EPD，驱动 `03`，运行 v2 槽位协议。
+> 为保护个人数据，屏幕中的额度、Token、仓库名和贡献数据已做马赛克处理；
+> 完整版式见下方示例渲染。
 
 ![示例渲染](docs/assets/rendered-combined.png)
 
